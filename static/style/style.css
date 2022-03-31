@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: lightsteelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+main section {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+main section a {
+    padding: 10px 20px;
+    background-color: royalblue;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 24px;
+    margin: 100px auto;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+main section p {
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+    main section {
+        width: 90%;
+    }
+}
