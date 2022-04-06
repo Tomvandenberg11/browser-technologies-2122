@@ -1,26 +1,34 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="/style/style.css" rel="stylesheet"/>
-    <title>T-Shirt</title>
-</head>
-<body>
-    <header>
-        <h1>Design je shirt!</h1>
-    </header>
+<%- include('./components/header.ejs') -%>
     <main>
         <section>
-            <a href="/stap1">Starten!</a>
-            <p>Hallo, op deze website kan je je eigen t-shirt designen. Heb je geen tijd maar ben je nog niet klaar? Dan kan je gewoon op een ander moment je t-shirt afmaken.</p>
+            <div>
+                <form method="post" action="/stap2">
+                    <label for="color">Kies de kleur van je t-shirt:</label>
+                    <select required id="color" name="color">
+                        <option disabled selected value="">Kies een kleur</option>
+                        <option value="#EE4B2B">Rood</option>
+                        <option value="#05B8CC">Blauw</option>
+                        <option value="#FFBF00">Geel</option>
+                        <option value="#454B1B">Groen</option>
+                        <option value="black">Zwart</option>
+                    </select>
+
+                    <label for="text">Welke tekst wil je op je shirt? (Er hoeft geen tekst bedrukt te worden)</label>
+                    <input id="text" type="text" name="text" placeholder="Type hier je tekst"/>
+
+                    <label for="size">Kies de maat van je t-shirt:</label>
+                    <select required id="size" name="size">
+                        <option disabled selected value="">Kies een maat</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+
+                    <button>Doorgaan</button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
-</html>
+<%- include('./components/footer.ejs') -%>
