@@ -2,6 +2,8 @@
     <main>
         <section>
             <div>
+                <h2>Design je eigen shirt met je eigen tekst!</h2>
+
                 <form method="post" action="/stap2">
                     <label for="color">Kies de kleur van je t-shirt:</label>
                     <select required id="color" name="color">
@@ -10,11 +12,11 @@
                         <option value="#05B8CC">Blauw</option>
                         <option value="#FFBF00">Geel</option>
                         <option value="#454B1B">Groen</option>
-                        <option value="black">Zwart</option>
+                        <option value="#000">Zwart</option>
                     </select>
 
                     <label for="text">Welke tekst wil je op je shirt? (Er hoeft geen tekst bedrukt te worden)</label>
-                    <input id="text" type="text" name="text" placeholder="Type hier je tekst"/>
+                    <input id="text" type="text" name="text" maxlength="18" placeholder="Type hier je tekst"/>
 
                     <label for="size">Kies de maat van je t-shirt:</label>
                     <select required id="size" name="size">

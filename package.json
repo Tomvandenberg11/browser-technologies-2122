@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "server": "node app.js",
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "run dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",

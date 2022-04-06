@@ -7,14 +7,19 @@
 header {
     height: 80px;
     width: 100%;
-    background-color: lightsteelblue;
+    background-color: royalblue;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
 }
 
 main section {
@@ -30,32 +35,58 @@ main section div {
     width: 60%;
 }
 
-main section a {
-    padding: 10px 20px;
-    background-color: royalblue;
-    border-radius: 5px;
-    border: 1px solid black;
-    font-size: 24px;
-    margin: 100px auto;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
+.summaryContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.summaryContainer svg {
+    width: 20%;
+    min-width: 20px;
+    height: auto;
+}
+
+.summaryContainer div {
+    display: inline;
+    width: auto;
+}
+
+main section div p {
+    margin-bottom: 10px;
+}
+
+.errorMessage {
+    border-bottom: 2px solid black;
+    padding-bottom: 50px;
 }
 
 main section div h2 {
     margin: 50px 0;
+    text-align: center;
+}
+
+main section div h3 {
+    margin-bottom: 20px;
+}
+
+main section div a {
+    color: #000;
+
 }
 
 main section div button {
     padding: 10px 20px;
-    background-color: royalblue;
+    background-color: cornflowerblue;
     border-radius: 5px;
     border: 1px solid black;
     font-size: 24px;
-    margin: 100px auto;
     display: inline-block;
     color: #fff;
     text-decoration: none;
+    margin-bottom: 50px;
 }
 
 main section p {
@@ -75,6 +106,23 @@ main section div form {
 main section div form input, select {
     display: inline;
     margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    -webkit-appearance: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 main section div svg {
@@ -83,11 +131,17 @@ main section div svg {
 }
 
 @media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
     main section {
         width: 90%;
     }
 
     main section div {
         width: 100%;
+    }
+    main section div svg {
+        height: 200px;
     }
 }
