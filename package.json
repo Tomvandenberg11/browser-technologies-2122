@@ -7,7 +7,7 @@
   "scripts": {
     "server": "node app.js",
     "start": "node app.js",
-    "run dev": "nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -74,7 +75,6 @@ main section div h3 {
 
 main section div a {
     color: #000;
-
 }
 
 main section div button {
@@ -87,6 +87,12 @@ main section div button {
     color: #fff;
     text-decoration: none;
     margin-bottom: 50px;
+    transition: transform .4s;
+}
+
+main section div button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 main section p {
@@ -144,4 +150,51 @@ main section div svg {
     main section div svg {
         height: 200px;
     }
+}
+
+/*SLIDER*/
+.mySlides {
+    display: none;
+    width: auto
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    display: none;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.visible {
+    display: block;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
 }
