@@ -3,6 +3,8 @@ Welkom bij het project van het vak Browser Technologies. Bij dit project van de 
 - Opdracht 1: https://sophievanderburg.github.io/opdracht1-BT/
 - Opdracht 2: https://maggness.github.io/BT-Tim/opdracht2-BT-main/
 
+![Screenshot](static/images/screenshot.png)
+
 ## Inhoudsopgave
 - [User Story](#user-story)
 - [Wireflow](#wireflow)
@@ -14,6 +16,10 @@ Welkom bij het project van het vak Browser Technologies. Bij dit project van de 
 
 ### User story
 > Ik wil mijn eigen t-shirt-met-nerdy-tekst kunnen ontwerpen, opslaan, bestellen, en een volgende keer dat ik de site bezoek kunnen gebruiken.
+
+### Wireflow
+![Wireflow](static/images/wireflow.jpg)
+
 
 #### Vereisten
 - Gegevens maker (naam, telefoon of email)
