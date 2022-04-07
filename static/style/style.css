@@ -1,200 +1,210 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 header {
-    height: 80px;
-    width: 100%;
-    background-color: royalblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 80px;
+  width: 100%;
+  background-color: royalblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header h1 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 header h1 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 main section {
-    width: 60%;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 main section div {
-    display: block;
-    margin: 0 auto;
-    width: 60%;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .summaryContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .summaryContainer svg {
-    width: 20%;
-    min-width: 20px;
-    height: auto;
+  width: 20%;
+  min-width: 20px;
+  height: auto;
 }
 
 .summaryContainer div {
-    display: inline;
-    width: auto;
+  display: inline;
+  width: auto;
 }
 
 main section div p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .errorMessage {
-    border-bottom: 2px solid black;
-    padding-bottom: 50px;
+  border-bottom: 2px solid black;
+  padding-bottom: 50px;
 }
 
 main section div h2 {
-    margin: 50px 0;
-    text-align: center;
+  margin: 50px 0;
+  text-align: center;
 }
 
 main section div h3 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 main section div a {
-    color: #000;
+  color: #000;
 }
 
 main section div button {
-    padding: 10px 20px;
-    background-color: cornflowerblue;
-    border-radius: 5px;
-    border: 1px solid black;
-    font-size: 24px;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 50px;
-    transition: transform .4s;
+  padding: 10px 20px;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 24px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 50px;
+  transition: transform 0.4s;
 }
 
 main section div button:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 main section p {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 main section div p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 main section div form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
-main section div form input, select {
-    display: inline;
-    margin-bottom: 20px;
-    padding: 10px;
-    margin-top: 5px;
-    -webkit-appearance: none;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: black;
+main section div form input,
+select {
+  display: inline;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-top: 5px;
+  -webkit-appearance: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 main section div svg {
-    display: block;
-    margin: 0 auto 30px;
+  display: block;
+  margin: 0 auto 30px;
 }
 
 @media only screen and (max-width: 600px) {
-    header h1 {
-        font-size: 2em;
-    }
-    main section {
-        width: 90%;
-    }
+  header h1 {
+    font-size: 2em;
+  }
+  main section {
+    width: 90%;
+  }
 
-    main section div {
-        width: 100%;
-    }
-    main section div svg {
-        height: 200px;
-    }
+  main section div {
+    width: 100%;
+  }
+  main section div svg {
+    height: 200px;
+  }
 }
 
 /*SLIDER*/
 .mySlides {
-    display: none;
-    width: auto
+  display: none;
+  width: auto;
 }
 
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    display: none;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: none;
 }
 .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-    background-color: #717171;
+.active,
+.dot:hover {
+  background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 .visible {
-    display: block;
+  display: block;
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
