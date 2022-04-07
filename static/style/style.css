@@ -109,6 +109,13 @@ main section div form {
   margin-top: 50px;
 }
 
+main section div form p {
+  display: none;
+  margin-bottom: 10px;
+  color: crimson;
+  font-size: 22px;
+}
+
 main section div form input,
 select {
   display: inline;
@@ -119,6 +126,10 @@ select {
   border: 1px solid black;
   border-radius: 5px;
   color: black;
+}
+
+.orderSummary {
+  padding-bottom: 50px;
 }
 
 input::-webkit-outer-spin-button,

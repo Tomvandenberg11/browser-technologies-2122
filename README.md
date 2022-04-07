@@ -79,7 +79,9 @@ Deze functie heb ik niet toegevoegd, omdat deze t-shirts unisex zijn.<br><br>
 **Verder gaan waar je gebleven bent/ontwerp herzien**<br>
 Deze functionaliteit heb ik deels gerealiseerd. Dit is een usable functionaliteit, omdat de website goed te gebruiken is als JavaScript is uitgeschakeld. De gebruiker kan teruggaan naar de eerste stap met de ingevoerde velden, maar als het shirt is besteld, wordt de localStorage verwijderd. Dit omdat de gebruiker dan een nieuw shirt kan bestellen zonder dat de velden al van te voren zijn ingevuld.<br><br>
 
-- Validatie: alles moet zijn ingevuld. Geef duidelijke foutmeldingen
+**Validatie: alles moet zijn ingevuld. Geef duidelijke foutmeldingen**<br>
+Deze functionalitetit heb ik gerealiseerd door middel van de input attributes in HTML. Ik heb hiervoor gekozen omdat de validatie dan altijd werkt.<br><br>
+
 - Gebruiker moet meerdere t-shirts kunnen maken en herzien, en moet dus een overzichtspagina hebben.
 
 **Bestel pagina om een ontwerp kopen en laten maken**<br>

@@ -11,7 +11,7 @@
                         <p><b>Maat:</b> <%= size %></p>
                         <p><b>Kleur:</b> <%= readableColor %></p>
                     </div>
-                    <svg width="300px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg width="300px" height="300px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 295.526 295.526" style="enable-background:new 0 0 295.526 295.526;" xml:space="preserve">
                         <path fill="beige" d="M147.763,44.074c12.801,0,23.858-8.162,27.83-20.169c-7.578,2.086-17.237,3.345-27.83,3.345
                             c-10.592,0-20.251-1.259-27.828-3.345C123.905,35.911,134.961,44.074,147.763,44.074z"/>
@@ -28,13 +28,14 @@
 
                 <p class="errorMessage">Foutje gemaakt met het design? <a href="../">Ga terug</a></p>
 
-                <form id="contactForm" action="/stap3" method="post">
+                <form name="myForm" id="contactForm" action="/stap3" onsubmit="return validateForm()" method="post">
                     <h3>Je gegevens</h3>
                     <label>Je naam</label>
                     <input type="text" name="name" minlength="2" required>
+                    <p class="errorName">Voer je naam in!</p>
 
-                    <label>Je telefoonnummer (0612345678)</label>
-                    <input type="tel" name="number" pattern="[0-9]{10}" required>
+                    <label>Je telefoonnummer (06-12345678)</label>
+                    <input type="tel" name="number" pattern="06-[0-9]{8}" value="06-" required>
 
                     <label>Je e-mail adres</label>
                     <input type="email" name="email" minlength="6" required>

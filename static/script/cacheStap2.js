@@ -1,4 +1,4 @@
-const orderButton = document.querySelector("#order")
+var orderButton = document.querySelector("#order")
 
 orderButton.addEventListener("click", function () {
   localStorage.clear()
