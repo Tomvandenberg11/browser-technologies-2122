@@ -223,6 +223,7 @@ main section div svg {
   position: relative;
   margin: auto;
   display: none;
+  width: 100%;
 }
 .dot {
   cursor: pointer;

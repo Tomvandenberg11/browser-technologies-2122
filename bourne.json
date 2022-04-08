@@ -3,34 +3,10 @@
     {
       "size": "L",
       "color": "#EE4B2B",
-      "text": "Yoo",
+      "text": "",
       "name": "Tom",
       "phone": "06-11605254",
       "email": "tomvandenberg11@hotmail.com"
-    },
-    {
-      "size": "XL",
-      "color": "#05B8CC",
-      "text": "Nerds",
-      "name": "Robert",
-      "phone": "06-11508874",
-      "email": "robert@hva.nl"
-    },
-    {
-      "size": "M",
-      "color": "#454B1B",
-      "text": "Browsers",
-      "name": "Peter Paul",
-      "phone": "06-69785214",
-      "email": "ppk@hva.nl"
-    },
-    {
-      "size": "L",
-      "color": "#05B8CC",
-      "text": "Hallo",
-      "name": "Tom",
-      "phone": "06-11615458",
-      "email": "tom@tomvdb.nl"
     }
   ]
 }
